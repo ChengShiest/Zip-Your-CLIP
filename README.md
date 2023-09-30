@@ -26,7 +26,7 @@ This repository is the official implementation of [Zip](https://arxiv.org/abs/23
 ## Citation
 
 ```
-@article{freebloom,
+@article{zip,
 	title={The devil is in the object boundary: towards annotation-free instance segmentation using Foundation Modelsr},
 	author={Shi, Cheng and Yang, Sibei},
 	journal={arXiv preprint arXiv:2309.14494},
