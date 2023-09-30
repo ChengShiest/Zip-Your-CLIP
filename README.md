@@ -1,6 +1,6 @@
 # Zip-Your-CLIP
 
-This repository is the official implementation of [Free-Bloom](https://arxiv.org/abs/2309.14494).
+This repository is the official implementation of [Zip](https://arxiv.org/abs/2309.14494).
 
 **[The devil is in the object boundary: towards annotation-free instance segmentation using Foundation Modelsr](https://arxiv.org/abs/2309.14494)**
 
