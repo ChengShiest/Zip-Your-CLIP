@@ -16,6 +16,7 @@ This repository is the official implementation of [Zip](https://arxiv.org/abs/23
 
 
 ## <a name="GettingStarted"></a>Getting Started
+![image-20230924124604777](__assets__/frameworkv4.png)
 
 
 ## License
@@ -23,7 +24,7 @@ This repository is the official implementation of [Zip](https://arxiv.org/abs/23
 This Project is licensed under the [Apache 2.0 license](__assets__/LICENSE.txt).
 
 
-![image-20230924124604777](__assets__/frameworkv4.png)
+
 
 
 
