@@ -12,7 +12,7 @@ This repository is the official implementation of [Zip](https://arxiv.org/abs/23
 
 <!-- Code will be released soon, stay tuned! -->
 
-![image-20230924124604776](__assets__/fig1v3.png)
+![image-20230924124604776](__assets__/fig1.png)
 
 
 ## Installation
@@ -39,7 +39,7 @@ model, preprocess = clip.load("CS-ViT-B/16", device=device)
 ```
 
 ## <a name="GettingStarted"></a>Getting Started
-![image-20230924124604777](__assets__/frameworkv4.png)
+![image-20230924124604777](__assets__/fig2.png)
 
 
 ### Clustering Results
