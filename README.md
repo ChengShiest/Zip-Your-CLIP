@@ -42,13 +42,12 @@ model, preprocess = clip.load("CS-ViT-B/16", device=device)
 ![image-20230924124604777](__assets__/frameworkv4.png)
 
 
+### Clustering Results
+
+
 ## License
 
 This Project is licensed under the [Apache 2.0 license](__assets__/LICENSE.txt).
-
-
-
-
 
 
 ## Citation
