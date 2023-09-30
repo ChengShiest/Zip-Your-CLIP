@@ -18,28 +18,6 @@ This repository is the official implementation of [Zip](https://arxiv.org/abs/23
 
 ## Results
 
-**A Flower is blooming**
-
-<table class="center">
-    <tr>
-    <td><img src="__assets__/flower_bloom.gif"></td>
-    <td><img src="__assets__/Van_Gogh_flower.gif"></td>
-    <td><img src="__assets__/yellow_flower.gif"></td>
-    <td><img src="__assets__/long_video.gif"></td>
-    </tr>
-</table>
-
-
-
-**Volcano eruption**
-
-<table class="center">
-    <tr>
-    <td><img src="__assets__/volcano_eruption1.gif"></td>
-    <td><img src="__assets__/volcano_eruption2.gif"></td>
-    <td><img src="__assets__/volcano_eruption3.gif"></td>
-    </tr>
-</table>
 
 
 
@@ -49,8 +27,8 @@ This repository is the official implementation of [Zip](https://arxiv.org/abs/23
 
 ```
 @article{freebloom,
-	title={Free-Bloom: Zero-Shot Text-to-Video Generator with LLM Director and LDM Animator},
-	author={Huang, Hanzhuo and Feng, Yufan and Shi, Cheng and Xu, Lan and Yu, Jingyi and Yang, Sibei},
+	title={The devil is in the object boundary: towards annotation-free instance segmentation using Foundation Modelsr},
+	author={Shi, Cheng and Yang, Sibei},
 	journal={arXiv preprint arXiv:2309.14494},
 	year={2023}
 }
