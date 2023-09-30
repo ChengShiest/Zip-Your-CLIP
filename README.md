@@ -31,6 +31,12 @@ pip install git+https://github.com/openai/CLIP.git
 git clone https://github.com/xmed-lab/CLIP_Surgery.git
 ```
 
+Make sure that you correctly install the dependencies of CLIP_Surgery
+```
+### Test
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+model, preprocess = clip.load("CS-ViT-B/16", device=device)
+```
 
 ## <a name="GettingStarted"></a>Getting Started
 ![image-20230924124604777](__assets__/frameworkv4.png)
