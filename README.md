@@ -16,7 +16,9 @@ This repository is the official implementation of [Zip](https://arxiv.org/abs/23
 
 
 
-## Results
+## License
+
+This Project is licensed under the [Apache 2.0 license](LICENSE).
 
 
 
