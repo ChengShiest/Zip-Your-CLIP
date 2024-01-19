@@ -1,7 +1,8 @@
-# Zip: CLIP Itself is a Good Object-detector
+<br />
 <p align="center">
   <h1 align="center">Zip-Your-CLIP</h1>
   <p align="center">
+	Zip: CLIP Itself is a Good Object-detector
     ICLR, 2024
     <br />
     <a href="https://chengshiest.github.io/"><strong>Cheng Shi</strong></a>
