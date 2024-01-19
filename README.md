@@ -1,8 +1,21 @@
-# Zip-Your-CLIP
+<br />
+<p align="center">
+  <h1 align="center">Zip-Your-CLIP</h1>
+  <p align="center">
+    ICLR, 2024
+    <br />
+    <a href="https://chengshiest.github.io/"><strong>Cheng Shi</strong></a>
+    ·
+    <a href="https://faculty.sist.shanghaitech.edu.cn/yangsibei/"><strong>Sibei Yang†</strong></a>
+  </p>
 
-This repository is the official implementation of [Zip](https://arxiv.org/abs/2309.14494).
+  <p align="center">
+    <a href='https://openreview.net/forum?id=4JbrdrHxYy&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions)'>
+      <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
+  </p>
+<br />
 
-**[The Devil is in the Object Boundary: Towards Annotation-free Instance Segmentation using Foundation Models](https://arxiv.org/abs/2309.14494)**
+**[The Devil is in the Object Boundary: Towards Annotation-free Instance Segmentation using Foundation Models](https://openreview.net/forum?id=4JbrdrHxYy&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions))**
 
 [Cheng Shi](https://chengshiest.github.io/), [Sibei Yang†](https://faculty.sist.shanghaitech.edu.cn/yangsibei/)
 
