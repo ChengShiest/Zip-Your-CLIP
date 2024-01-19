@@ -15,11 +15,11 @@
   </p>
 <br />
 
-**[The Devil is in the Object Boundary: Towards Annotation-free Instance Segmentation using Foundation Models](https://openreview.net/forum?id=4JbrdrHxYy&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions))**
+<!-- **[The Devil is in the Object Boundary: Towards Annotation-free Instance Segmentation using Foundation Models](https://openreview.net/forum?id=4JbrdrHxYy&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions))**
 
 [Cheng Shi](https://chengshiest.github.io/), [Sibei Yang†](https://faculty.sist.shanghaitech.edu.cn/yangsibei/)
 
-†Corresponding Author
+†Corresponding Author -->
 
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-FreeBloom-b31b1b.svg)](https://arxiv.org/abs/2309.14494) ![Pytorch](https://img.shields.io/badge/PyTorch->=1.10.0-Red?logo=pytorch) -->
 
