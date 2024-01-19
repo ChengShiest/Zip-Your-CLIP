@@ -1,4 +1,4 @@
-<br />
+# Zip: CLIP Itself is a Good Object-detector
 <p align="center">
   <h1 align="center">Zip-Your-CLIP</h1>
   <p align="center">
