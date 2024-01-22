@@ -11,7 +11,7 @@
   </p>
 
   <p align="center">
-    <a href='https://openreview.net/forum?id=4JbrdrHxYy&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions)'>
+    <a href='https://openreview.net/forum?id=4JbrdrHxYy'>
       <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
   </p>
 <br />
