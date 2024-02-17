@@ -14,6 +14,8 @@ import cv2
 from CLIP_Surgery import clip
 import torch.nn.functional as F
 from collections import Counter
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '2'
 
 def _convert_image_to_rgb(image):
     return image.convert("RGB")
@@ -115,19 +117,27 @@ def show_box(box, ax):
     w, h = box[2] - box[0], box[3] - box[1]
     ax.add_patch(plt.Rectangle((x0, y0), w, h, edgecolor='blue', facecolor=(0,0,0,0), lw=3)) 
 
-
+def resize_pos(x1,y1,src_size,tar_size):
+    w1=src_size[0]
+    h1=src_size[1]
+    w2=tar_size[1]
+    h2=tar_size[0]
+    y2=(h2/h1)*y1
+    x2=(w2/w1)*x1
+    return x2,y2
+device = 'cuda:2'
 def inference_on_one_image(semantic_model, clustering_model, image_root, class_name):
     # Load image
     I = Image.open(image_root).convert('RGB')
     image = cv2.imread(image_root)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     tensor = H2_ToTensor(I).unsqueeze(0)
-    tensor = tensor.cuda()
+    tensor = tensor.to(device)
     print(tensor.shape)
 
     with torch.no_grad():
-        text_features = clip.encode_text_with_prompt_ensemble(semantic_model, class_name, 'cuda')
-        redundant_feats = clip.encode_text_with_prompt_ensemble(semantic_model, [''], 'cuda')
+        text_features = clip.encode_text_with_prompt_ensemble(semantic_model, class_name, device)
+        redundant_feats = clip.encode_text_with_prompt_ensemble(semantic_model, [''], device)
         image_features0 = semantic_model.encode_image(tensor)
         image_features0 = image_features0 / image_features0.norm(dim=1, keepdim=True)
         similarity0 = clip.clip_feature_surgery(image_features0, text_features, redundant_feats)
@@ -136,13 +146,17 @@ def inference_on_one_image(semantic_model, clustering_model, image_root, class_n
 
     with torch.no_grad():
         tensor = L_ToTensor(I).unsqueeze(0)
-        tensor = tensor.cuda()
+        tensor = tensor.to(device)
         feature = clustering_model(tensor)[0]
         c, h, w = feature.shape
         feature_flat = feature.permute(1, 2, 0).reshape(-1, c)
         k = 20
         centroid_indices = torch.randint(feature_flat.shape[0], size=(k,))
-        centroid_indices = centroid_indices.cuda()
+        centroid_indices = torch.linspace(0, h*w-1, k)
+        centroid_indices = torch.round(centroid_indices)
+        centroid_indices = torch.unique(centroid_indices)
+        centroid_indices = torch.tensor(centroid_indices, dtype=torch.long)
+        centroid_indices = centroid_indices.to(device)
         new_centroids = feature_flat[centroid_indices]
 
         max_iterations = 100
@@ -209,6 +223,7 @@ def inference_on_one_image(semantic_model, clustering_model, image_root, class_n
     for prop in properties:
         if prop.area < 100:
             continue
-        resize_bbox = [prop.bbox[1]*scale1, prop.bbox[0]*scale2, prop.bbox[3]*scale1, prop.bbox[2]*scale2]
-        show_box(resize_bbox, plt.gca())
+        x1,y1 = resize_pos(prop.bbox[1] ,prop.bbox[0] ,cluster_labels.shape,I.size) 
+        x2,y2 = resize_pos(prop.bbox[3] ,prop.bbox[2] ,cluster_labels.shape,I.size)
+        show_box([x1,y1,x2,y2], plt.gca())
     return None
