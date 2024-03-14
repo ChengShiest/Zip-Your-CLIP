@@ -67,10 +67,12 @@ This Project is licensed under the [Apache 2.0 license](__assets__/LICENSE.txt).
 ## Citation
 
 ```
-@article{zip,
-	title={The devil is in the object boundary: towards annotation-free instance segmentation using Foundation Modelsr},
-	author={Shi, Cheng and Yang, Sibei},
-	journal={arXiv preprint arXiv:2309.14494},
-	year={2023}
+@inproceedings{
+shi2024the,
+title={The Devil is in the Object Boundary: Towards Annotation-free Instance Segmentation using Foundation Models},
+author={Cheng Shi and Sibei Yang},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=4JbrdrHxYy}
 }
 ```
