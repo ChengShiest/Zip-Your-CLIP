@@ -3,6 +3,7 @@
   <h1 align="center">Zip-Your-CLIP</h1>
   <p align="center">
 	The Devil is in the Object Boundary: Towards Annotation-free Instance Segmentation using Foundation Models
+	  
 	Zip: CLIP Itself is a Good Object-detector
     ICLR, 2024
     <br />
@@ -55,9 +56,6 @@ model, preprocess = clip.load("CS-ViT-B/16", device=device)
 
 ## <a name="GettingStarted"></a>Getting Started
 ![image-20230924124604777](__assets__/fig2.png)
-
-
-### Clustering Results
 
 
 ## License
