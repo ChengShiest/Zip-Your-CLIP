@@ -3,7 +3,6 @@
   <h1 align="center">Zip-Your-CLIP</h1>
   <p align="center">
 	The Devil is in the Object Boundary: Towards Annotation-free Instance Segmentation using Foundation Models
-	  
 	Zip: CLIP Itself is a Good Object-detector
     ICLR, 2024
     <br />
